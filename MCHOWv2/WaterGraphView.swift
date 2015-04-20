@@ -15,6 +15,58 @@ import UIKit
         @IBInspectable var startColor: UIColor = UIColor.redColor()
         @IBInspectable var endColor: UIColor = UIColor.greenColor()
         
+        func getPoints() {
+            let url = NSURL(string: "http://mchow.herokuapp.com/petinfo/water/5500")
+            var html = ""
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+                html = NSString(data: data, encoding: NSUTF8StringEncoding)!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            }
+            
+            task.resume()
+            while(html.isEmpty) {} //wait for task to finish
+            for var index = html.startIndex; index != html.endIndex; index++ {
+                if html[index] == "(" {
+                    html = html.substringFromIndex(index)
+                    break
+                }
+            }
+            
+            for var index = html.endIndex.predecessor(); index != html.startIndex; index-- {
+                if html[index] == ")" {
+                    html = html.substringToIndex(index.successor())
+                    break
+                }
+            }
+            
+            var vals = [NSDate: Double]()
+            
+            var date = ""
+            var amtStr = ""
+            var amt: Double!
+            var start = html.startIndex
+            var end = html.startIndex
+            for var index = html.startIndex; index != html.endIndex; index++ {
+                if html[index] == "(" {
+                    start = index
+                } else if html[index] == "," {
+                    //initialize date
+                    date = html[start.successor()...index.predecessor()]
+                    //                println(date)
+                    //set new start index
+                    start = index
+                } else if html[index] == ")" {
+                    amtStr = html[start.successor()...index.predecessor()]
+                    //                println(amtStr)
+                    amt = (amtStr as NSString).doubleValue
+                    //add to dictionary
+                    vals[NSDate(dateString: date)] = amt
+                }
+            }
+            
+            
+            
+        }
+        
         //Weekly sample data
         //WILL NEED TO REPLACE THIS FOR SERVER DATA
         var graphPoints:[Int] = [4, 2, 6, 4, 5, 8, 3]

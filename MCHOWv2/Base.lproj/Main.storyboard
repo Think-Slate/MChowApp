@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1244,49 +1244,44 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-qj-gnf" customClass="WaterGraphView" customModule="MCHOWv2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Consumed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-0M-cA8">
-                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="145.5" height="17"/>
-                                                </variation>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3U-Um-qO3">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="77" height="17"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCw-jI-WbM">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="17" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C35-Mh-iit">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="8.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL8-Ry-v3M">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38.5" id="X6H-Nq-gpB"/>
+                                                    <constraint firstAttribute="height" constant="17" id="y22-qI-kgC"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="9.5" height="17"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="X6H-Nq-gpB"/>
+                                                        <exclude reference="y22-qI-kgC"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="X6H-Nq-gpB"/>
+                                                        <include reference="y22-qI-kgC"/>
+                                                    </mask>
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evi-pC-zF4">
@@ -1294,73 +1289,90 @@
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="7.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2b-kS-xfI">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="18" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmr-uZ-dDE">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="7.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOd-tc-AGX">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="16" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-6N-yI0">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="14.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7na-x3-H2U">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="6.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-Ch-D0p">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="14" height="15"/>
-                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Consumed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-0M-cA8">
+                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1412899762" green="0.0" blue="0.83444695719999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="X2b-kS-xfI" firstAttribute="leading" secondItem="Tmr-uZ-dDE" secondAttribute="trailing" constant="26.5" id="1XW-vn-CUq">
+                                                <variation key="widthClass=compact" constant="30"/>
+                                            </constraint>
+                                            <constraint firstItem="x3U-Um-qO3" firstAttribute="leading" secondItem="PJE-qj-gnf" secondAttribute="leading" constant="15" id="1c0-cc-Ef3"/>
+                                            <constraint firstItem="Tmr-uZ-dDE" firstAttribute="leading" secondItem="JOd-tc-AGX" secondAttribute="trailing" constant="32" id="1dC-zL-kqH"/>
+                                            <constraint firstItem="ZCw-jI-WbM" firstAttribute="top" secondItem="PJE-qj-gnf" secondAttribute="top" constant="53" id="2ev-8k-7cy"/>
+                                            <constraint firstItem="evi-pC-zF4" firstAttribute="centerY" secondItem="X2b-kS-xfI" secondAttribute="centerY" id="3nD-Gs-Yjt"/>
+                                            <constraint firstItem="evi-pC-zF4" firstAttribute="centerY" secondItem="E3g-6N-yI0" secondAttribute="centerY" id="4D4-ep-Uvk"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZCw-jI-WbM" secondAttribute="trailing" constant="5" id="Hxb-wM-OZa"/>
+                                            <constraint firstItem="Rna-0M-cA8" firstAttribute="leading" secondItem="PJE-qj-gnf" secondAttribute="leading" constant="15" id="Ig5-kc-mWv"/>
+                                            <constraint firstItem="E3g-6N-yI0" firstAttribute="leading" secondItem="7na-x3-H2U" secondAttribute="trailing" constant="29.5" id="OEs-ny-0F5"/>
+                                            <constraint firstItem="x3U-Um-qO3" firstAttribute="top" secondItem="Rna-0M-cA8" secondAttribute="bottom" constant="4" id="Qop-LM-ziZ"/>
                                             <constraint firstAttribute="width" constant="250" id="ULh-FG-5dT">
                                                 <variation key="widthClass=compact" constant="300"/>
                                             </constraint>
+                                            <constraint firstItem="JOd-tc-AGX" firstAttribute="leading" secondItem="E3g-6N-yI0" secondAttribute="trailing" constant="25.5" id="W9q-mJ-Lwu">
+                                                <variation key="widthClass=compact" constant="30"/>
+                                            </constraint>
+                                            <constraint firstItem="E3g-6N-yI0" firstAttribute="centerY" secondItem="7na-x3-H2U" secondAttribute="centerY" id="Wyb-9D-cVq"/>
+                                            <constraint firstItem="Rna-0M-cA8" firstAttribute="top" secondItem="PJE-qj-gnf" secondAttribute="top" constant="8" id="aZO-ZQ-8IA"/>
+                                            <constraint firstItem="jh9-Ch-D0p" firstAttribute="centerY" secondItem="7na-x3-H2U" secondAttribute="centerY" id="fRY-yQ-cGE"/>
+                                            <constraint firstAttribute="trailing" secondItem="C35-Mh-iit" secondAttribute="trailing" constant="8.5" id="fcr-Ij-Ba9"/>
+                                            <constraint firstItem="evi-pC-zF4" firstAttribute="centerY" secondItem="JOd-tc-AGX" secondAttribute="centerY" id="fll-S7-MkY"/>
+                                            <constraint firstItem="jh9-Ch-D0p" firstAttribute="leading" secondItem="PJE-qj-gnf" secondAttribute="leading" constant="15" id="gid-24-UTv"/>
+                                            <constraint firstAttribute="bottom" secondItem="jh9-Ch-D0p" secondAttribute="bottom" constant="30" id="k4g-ik-WT6"/>
+                                            <constraint firstItem="evi-pC-zF4" firstAttribute="centerY" secondItem="Tmr-uZ-dDE" secondAttribute="centerY" id="kKo-Qc-VvL"/>
+                                            <constraint firstItem="7na-x3-H2U" firstAttribute="leading" secondItem="jh9-Ch-D0p" secondAttribute="trailing" constant="28" id="lQO-WP-njH">
+                                                <variation key="widthClass=compact" constant="35"/>
+                                            </constraint>
+                                            <constraint firstItem="C35-Mh-iit" firstAttribute="top" secondItem="ZCw-jI-WbM" secondAttribute="bottom" constant="124" id="rQz-ha-iR6"/>
+                                            <constraint firstItem="CL8-Ry-v3M" firstAttribute="top" secondItem="Rna-0M-cA8" secondAttribute="bottom" constant="4" id="uC5-vc-LUJ"/>
                                             <constraint firstAttribute="height" constant="300" id="vS5-Hl-sbu">
                                                 <variation key="widthClass=compact" constant="250"/>
                                             </constraint>
+                                            <constraint firstItem="evi-pC-zF4" firstAttribute="leading" secondItem="X2b-kS-xfI" secondAttribute="trailing" constant="23" id="w7r-3V-btR">
+                                                <variation key="widthClass=compact" constant="30"/>
+                                            </constraint>
+                                            <constraint firstItem="CL8-Ry-v3M" firstAttribute="leading" secondItem="x3U-Um-qO3" secondAttribute="trailing" constant="8" id="y8q-ka-GDm"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -1372,7 +1384,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="Rna-0M-cA8"/>
                                                 <exclude reference="x3U-Um-qO3"/>
                                                 <exclude reference="ZCw-jI-WbM"/>
                                                 <exclude reference="C35-Mh-iit"/>
@@ -1384,15 +1395,39 @@
                                                 <exclude reference="E3g-6N-yI0"/>
                                                 <exclude reference="7na-x3-H2U"/>
                                                 <exclude reference="jh9-Ch-D0p"/>
+                                                <exclude reference="Rna-0M-cA8"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="ULh-FG-5dT"/>
                                                 <exclude reference="vS5-Hl-sbu"/>
+                                                <exclude reference="Ig5-kc-mWv"/>
+                                                <exclude reference="aZO-ZQ-8IA"/>
+                                                <exclude reference="1c0-cc-Ef3"/>
+                                                <exclude reference="Qop-LM-ziZ"/>
+                                                <exclude reference="uC5-vc-LUJ"/>
+                                                <exclude reference="y8q-ka-GDm"/>
+                                                <exclude reference="fRY-yQ-cGE"/>
+                                                <exclude reference="gid-24-UTv"/>
+                                                <exclude reference="k4g-ik-WT6"/>
+                                                <exclude reference="lQO-WP-njH"/>
+                                                <exclude reference="OEs-ny-0F5"/>
+                                                <exclude reference="Wyb-9D-cVq"/>
+                                                <exclude reference="W9q-mJ-Lwu"/>
+                                                <exclude reference="1dC-zL-kqH"/>
+                                                <exclude reference="2ev-8k-7cy"/>
+                                                <exclude reference="Hxb-wM-OZa"/>
+                                                <exclude reference="1XW-vn-CUq"/>
+                                                <exclude reference="fcr-Ij-Ba9"/>
+                                                <exclude reference="rQz-ha-iR6"/>
+                                                <exclude reference="3nD-Gs-Yjt"/>
+                                                <exclude reference="4D4-ep-Uvk"/>
+                                                <exclude reference="fll-S7-MkY"/>
+                                                <exclude reference="kKo-Qc-VvL"/>
+                                                <exclude reference="w7r-3V-btR"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="Rna-0M-cA8"/>
                                                 <include reference="x3U-Um-qO3"/>
                                                 <include reference="ZCw-jI-WbM"/>
                                                 <include reference="C35-Mh-iit"/>
@@ -1404,10 +1439,35 @@
                                                 <include reference="E3g-6N-yI0"/>
                                                 <include reference="7na-x3-H2U"/>
                                                 <include reference="jh9-Ch-D0p"/>
+                                                <include reference="Rna-0M-cA8"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="ULh-FG-5dT"/>
                                                 <include reference="vS5-Hl-sbu"/>
+                                                <include reference="Ig5-kc-mWv"/>
+                                                <include reference="aZO-ZQ-8IA"/>
+                                                <include reference="1c0-cc-Ef3"/>
+                                                <include reference="Qop-LM-ziZ"/>
+                                                <include reference="uC5-vc-LUJ"/>
+                                                <include reference="y8q-ka-GDm"/>
+                                                <include reference="fRY-yQ-cGE"/>
+                                                <include reference="gid-24-UTv"/>
+                                                <include reference="k4g-ik-WT6"/>
+                                                <include reference="lQO-WP-njH"/>
+                                                <include reference="OEs-ny-0F5"/>
+                                                <include reference="Wyb-9D-cVq"/>
+                                                <include reference="W9q-mJ-Lwu"/>
+                                                <include reference="1dC-zL-kqH"/>
+                                                <include reference="2ev-8k-7cy"/>
+                                                <include reference="Hxb-wM-OZa"/>
+                                                <include reference="1XW-vn-CUq"/>
+                                                <include reference="fcr-Ij-Ba9"/>
+                                                <include reference="rQz-ha-iR6"/>
+                                                <include reference="3nD-Gs-Yjt"/>
+                                                <include reference="4D4-ep-Uvk"/>
+                                                <include reference="fll-S7-MkY"/>
+                                                <include reference="kKo-Qc-VvL"/>
+                                                <include reference="w7r-3V-btR"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -2432,114 +2492,108 @@
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="83.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFa-pG-3ao">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="68" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgu-4m-cFq">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="17" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2h-6R-qcY">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="8.5" height="15"/>
-                                                </variation>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-Cc-MUQ">
-                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="8.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-LG-CeX">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="14" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Req-Xg-s6o">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="6.5" height="15"/>
-                                                </variation>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-O8-NMT">
-                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="14.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o75-g2-atD">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="7.5" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq1-PC-avF">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="18" height="15"/>
-                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="473-M7-mLs">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="7.5" height="15"/>
-                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-O8-NMT">
+                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2g-Lz-Shb">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="-50" y="-175" width="16" height="15"/>
-                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-Cc-MUQ">
+                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.13358347039999999" green="0.43287417760000002" blue="0.3909590872" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="HRk-hu-BJo" firstAttribute="leading" secondItem="06C-JB-Lzb" secondAttribute="leading" constant="19" id="0A1-Mq-zhm"/>
+                                            <constraint firstItem="C2g-Lz-Shb" firstAttribute="leading" secondItem="UXi-O8-NMT" secondAttribute="trailing" constant="25.5" id="12h-vV-MjX"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="leading" secondItem="06C-JB-Lzb" secondAttribute="leading" constant="19" id="1bm-1a-l8R"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="centerY" secondItem="C2g-Lz-Shb" secondAttribute="centerY" id="96A-Ck-K33"/>
                                             <constraint firstAttribute="height" constant="250" id="9Xi-3g-7qR"/>
+                                            <constraint firstItem="cgu-4m-cFq" firstAttribute="top" secondItem="06C-JB-Lzb" secondAttribute="top" constant="53" id="9in-lS-9de"/>
+                                            <constraint firstItem="rq1-PC-avF" firstAttribute="leading" secondItem="o75-g2-atD" secondAttribute="trailing" constant="26.5" id="AVt-CY-PBX">
+                                                <variation key="widthClass=compact" constant="35"/>
+                                            </constraint>
                                             <constraint firstAttribute="width" constant="300" id="BAO-tr-gWD"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="centerY" secondItem="UXi-O8-NMT" secondAttribute="centerY" id="BLD-q4-m81"/>
+                                            <constraint firstItem="473-M7-mLs" firstAttribute="leading" secondItem="rq1-PC-avF" secondAttribute="trailing" constant="22" id="Bvl-Vn-beJ">
+                                                <variation key="widthClass=compact" constant="25"/>
+                                            </constraint>
+                                            <constraint firstItem="UXi-O8-NMT" firstAttribute="leading" secondItem="Req-Xg-s6o" secondAttribute="trailing" constant="30.5" id="C4A-0i-8yr"/>
+                                            <constraint firstItem="HRk-hu-BJo" firstAttribute="top" secondItem="06C-JB-Lzb" secondAttribute="top" constant="8" id="CG6-S3-2dS"/>
+                                            <constraint firstItem="yc1-Cc-MUQ" firstAttribute="leading" secondItem="LFa-pG-3ao" secondAttribute="trailing" constant="8" id="IVb-g6-0hk"/>
+                                            <constraint firstItem="LFa-pG-3ao" firstAttribute="leading" secondItem="06C-JB-Lzb" secondAttribute="leading" constant="19" id="JmT-Cb-OVb"/>
+                                            <constraint firstAttribute="bottom" secondItem="wJc-LG-CeX" secondAttribute="bottom" constant="30" id="Phb-bB-86x"/>
+                                            <constraint firstItem="yc1-Cc-MUQ" firstAttribute="top" secondItem="HRk-hu-BJo" secondAttribute="bottom" constant="8" id="RPa-Mu-fHQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="cgu-4m-cFq" secondAttribute="trailing" constant="4" id="TP6-hP-ifZ"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="centerY" secondItem="rq1-PC-avF" secondAttribute="centerY" id="Ud7-Gs-eKV"/>
+                                            <constraint firstItem="o75-g2-atD" firstAttribute="leading" secondItem="C2g-Lz-Shb" secondAttribute="trailing" constant="26" id="X4e-sC-lIG">
+                                                <variation key="widthClass=compact" constant="35"/>
+                                            </constraint>
+                                            <constraint firstItem="Req-Xg-s6o" firstAttribute="leading" secondItem="wJc-LG-CeX" secondAttribute="trailing" constant="25" id="edf-oi-dAg"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="centerY" secondItem="o75-g2-atD" secondAttribute="centerY" id="f5A-ox-Aws"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="centerY" secondItem="473-M7-mLs" secondAttribute="centerY" id="hCg-3H-bdA"/>
+                                            <constraint firstAttribute="trailing" secondItem="n2h-6R-qcY" secondAttribute="trailing" constant="8.5" id="lSw-0z-A1B"/>
+                                            <constraint firstItem="wJc-LG-CeX" firstAttribute="centerY" secondItem="Req-Xg-s6o" secondAttribute="centerY" id="pFQ-DM-iMa"/>
+                                            <constraint firstItem="LFa-pG-3ao" firstAttribute="top" secondItem="HRk-hu-BJo" secondAttribute="bottom" constant="7" id="r8L-m5-nQn"/>
+                                            <constraint firstItem="n2h-6R-qcY" firstAttribute="top" secondItem="cgu-4m-cFq" secondAttribute="bottom" constant="124" id="smO-JX-4ta"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -2555,18 +2609,42 @@
                                                 <exclude reference="LFa-pG-3ao"/>
                                                 <exclude reference="cgu-4m-cFq"/>
                                                 <exclude reference="n2h-6R-qcY"/>
-                                                <exclude reference="yc1-Cc-MUQ"/>
                                                 <exclude reference="wJc-LG-CeX"/>
                                                 <exclude reference="Req-Xg-s6o"/>
-                                                <exclude reference="UXi-O8-NMT"/>
                                                 <exclude reference="o75-g2-atD"/>
                                                 <exclude reference="rq1-PC-avF"/>
                                                 <exclude reference="473-M7-mLs"/>
+                                                <exclude reference="UXi-O8-NMT"/>
                                                 <exclude reference="C2g-Lz-Shb"/>
+                                                <exclude reference="yc1-Cc-MUQ"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="9Xi-3g-7qR"/>
                                                 <exclude reference="BAO-tr-gWD"/>
+                                                <exclude reference="0A1-Mq-zhm"/>
+                                                <exclude reference="CG6-S3-2dS"/>
+                                                <exclude reference="JmT-Cb-OVb"/>
+                                                <exclude reference="r8L-m5-nQn"/>
+                                                <exclude reference="IVb-g6-0hk"/>
+                                                <exclude reference="RPa-Mu-fHQ"/>
+                                                <exclude reference="1bm-1a-l8R"/>
+                                                <exclude reference="96A-Ck-K33"/>
+                                                <exclude reference="BLD-q4-m81"/>
+                                                <exclude reference="Phb-bB-86x"/>
+                                                <exclude reference="Ud7-Gs-eKV"/>
+                                                <exclude reference="f5A-ox-Aws"/>
+                                                <exclude reference="hCg-3H-bdA"/>
+                                                <exclude reference="pFQ-DM-iMa"/>
+                                                <exclude reference="edf-oi-dAg"/>
+                                                <exclude reference="C4A-0i-8yr"/>
+                                                <exclude reference="12h-vV-MjX"/>
+                                                <exclude reference="X4e-sC-lIG"/>
+                                                <exclude reference="9in-lS-9de"/>
+                                                <exclude reference="TP6-hP-ifZ"/>
+                                                <exclude reference="AVt-CY-PBX"/>
+                                                <exclude reference="Bvl-Vn-beJ"/>
+                                                <exclude reference="lSw-0z-A1B"/>
+                                                <exclude reference="smO-JX-4ta"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -2575,18 +2653,42 @@
                                                 <include reference="LFa-pG-3ao"/>
                                                 <include reference="cgu-4m-cFq"/>
                                                 <include reference="n2h-6R-qcY"/>
-                                                <include reference="yc1-Cc-MUQ"/>
                                                 <include reference="wJc-LG-CeX"/>
                                                 <include reference="Req-Xg-s6o"/>
-                                                <include reference="UXi-O8-NMT"/>
                                                 <include reference="o75-g2-atD"/>
                                                 <include reference="rq1-PC-avF"/>
                                                 <include reference="473-M7-mLs"/>
+                                                <include reference="UXi-O8-NMT"/>
                                                 <include reference="C2g-Lz-Shb"/>
+                                                <include reference="yc1-Cc-MUQ"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="9Xi-3g-7qR"/>
                                                 <include reference="BAO-tr-gWD"/>
+                                                <include reference="0A1-Mq-zhm"/>
+                                                <include reference="CG6-S3-2dS"/>
+                                                <include reference="JmT-Cb-OVb"/>
+                                                <include reference="r8L-m5-nQn"/>
+                                                <include reference="IVb-g6-0hk"/>
+                                                <include reference="RPa-Mu-fHQ"/>
+                                                <include reference="1bm-1a-l8R"/>
+                                                <include reference="96A-Ck-K33"/>
+                                                <include reference="BLD-q4-m81"/>
+                                                <include reference="Phb-bB-86x"/>
+                                                <include reference="Ud7-Gs-eKV"/>
+                                                <include reference="f5A-ox-Aws"/>
+                                                <include reference="hCg-3H-bdA"/>
+                                                <include reference="pFQ-DM-iMa"/>
+                                                <include reference="edf-oi-dAg"/>
+                                                <include reference="C4A-0i-8yr"/>
+                                                <include reference="12h-vV-MjX"/>
+                                                <include reference="X4e-sC-lIG"/>
+                                                <include reference="9in-lS-9de"/>
+                                                <include reference="TP6-hP-ifZ"/>
+                                                <include reference="AVt-CY-PBX"/>
+                                                <include reference="Bvl-Vn-beJ"/>
+                                                <include reference="lSw-0z-A1B"/>
+                                                <include reference="smO-JX-4ta"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -2609,8 +2711,7 @@
                                         <exclude reference="nJl-3o-T3W"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="125" y="150" width="350" height="300"/>
+                                <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="06C-JB-Lzb"/>
                                     </mask>
@@ -2627,9 +2728,6 @@
                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="215.5" y="117" width="169" height="25"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.13358347039999999" green="0.43287417760000002" blue="0.3909590872" alpha="1" colorSpace="calibratedRGB"/>
@@ -2778,8 +2876,8 @@
         <image name="pic_overlay_small" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4NK-ii-uSO"/>
-        <segue reference="YOY-k6-yOu"/>
         <segue reference="H9A-Wb-DTT"/>
+        <segue reference="Ca6-Mx-HTo"/>
+        <segue reference="YOY-k6-yOu"/>
     </inferredMetricsTieBreakers>
 </document>
