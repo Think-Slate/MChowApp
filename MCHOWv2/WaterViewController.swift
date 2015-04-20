@@ -65,8 +65,21 @@ class WaterViewController: UIViewController {
             fromDate: NSDate())
         var weekday = components.weekday
         
-        //let days = ["S", "S", "M", "T", "W", "T", "F"]
+        let days = ["S", "S", "M", "T", "W", "T", "F"]
         
+        //5 - set up the day name labels with correct day
+        for i in reverse(1...days.count) {
+            if let labelView = graphView.viewWithTag(i) as? UILabel {
+                if weekday == 7 {
+                    weekday = 0
+                }
+                labelView.text = days[weekday--]
+                if weekday < 0 {
+                    weekday = days.count - 1
+                }
+            }
+        }
     }
-    
+        
 }
+    
