@@ -15,7 +15,7 @@ import UIKit
         @IBInspectable var startColor: UIColor = UIColor.redColor()
         @IBInspectable var endColor: UIColor = UIColor.greenColor()
         
-        func getPoints() {
+        func getPoints() -> [Double]{
             let url = NSURL(string: "http://mchow.herokuapp.com/petinfo/water/5500")
             var html = ""
             let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
@@ -66,10 +66,19 @@ import UIKit
             let cDate = NSDate()
             let formatter = NSDateFormatter()
             formatter.dateFormat = "yyyy-MM-dd"
-            let dateStr = formatter.stringFromDate(cDate)
-            //        println(vals[NSDate(dateString: dateStr)])
-            
-            
+            var dateStr = formatter.stringFromDate(cDate)
+            var graphPoints:[Double?] = []
+            let val = vals[NSDate(dateString: dateStr)]
+            let calendar = NSCalendar.currentCalendar()
+            graphPoints.append(val)
+            var i = 1
+            while i < 7 {
+                let day = calendar.dateByAddingUnit(.CalendarUnitDay, value: -i, toDate: NSDate(), options: nil)
+                dateStr = formatter.stringFromDate(day!)
+                graphPoints.append(vals[NSDate(dateString: dateStr)])
+                i++
+            }
+            return graphPoints
         }
         
         //Weekly sample data
