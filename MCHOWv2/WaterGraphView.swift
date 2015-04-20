@@ -63,6 +63,11 @@ import UIKit
                 }
             }
             
+            let cDate = NSDate()
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let dateStr = formatter.stringFromDate(cDate)
+            //        println(vals[NSDate(dateString: dateStr)])
             
             
         }
